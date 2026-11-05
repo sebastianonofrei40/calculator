@@ -15,3 +15,11 @@ Enter 6, *, 7, then expect "Result: 42.0".
 
 ## How to stop
 Enter Ctrl+C; the application may print KeyboardInterrupt.
+
+## Test script
+Run source /opt/python-venv/sccm-4910/bin/activate followed by python3 -m pytest --version to activate the SCCM4910 virtual environment.
+Then, run ./check.sh to test the application on addition, multiplication, division, subtraction and division of odd numbers.
+If all tests succeeded, the script should print "QUALITY GATE PASSED".
+Following the test, run echo $? to check the exit status of the script.
+0 indicates all tests succeeded, 1 indicates some tests failed while 5 indicates no tests were collected.
+
